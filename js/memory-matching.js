@@ -152,7 +152,10 @@ $(function(){
 //   hubbers = JSON.parse(this.responseText)  
 // };
  
-// var request = new XMLHttpRequest();
+// var xhr = new XMLHttpRequest();
 // request.onload = hubbersLoaded;
-// request.open("get", "https://team.githubapp.com/api/hubbers", true);
-// request.send();
+// xhr.open("get", "http://graph.facebook.com/me/friends?fields=name,first_name,last_name,username,picture.width(128).height(128)", true);
+// xhr.send();
+
+//console.log (xhr.status);
+//console.log (xhr.statusText);
