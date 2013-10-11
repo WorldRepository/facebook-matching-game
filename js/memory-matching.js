@@ -151,11 +151,15 @@ $(function(){
 // function hubbersLoaded () {
 //   hubbers = JSON.parse(this.responseText)  
 // };
+
+FB.api('/me/friends?fields=name,first_name,last_name,username,picture.width(128).height(128)', function(response) {
+  alert(response);
+});
  
 // var xhr = new XMLHttpRequest();
 // request.onload = hubbersLoaded;
-// xhr.open("get", "http://graph.facebook.com/me/friends?fields=name,first_name,last_name,username,picture.width(128).height(128)", true);
+// xhr.open("get", "/me/friends?fields=name,first_name,last_name,username,picture.width(128).height(128)", true);
 // xhr.send();
 
-//console.log (xhr.status);
-//console.log (xhr.statusText);
+// console.log (xhr.status);
+// console.log (xhr.statusText);
