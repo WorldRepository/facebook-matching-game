@@ -17,10 +17,10 @@ matchingGame.deck = []
 
 // Like this https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
 
-Hubbers["hubbers"].sort(shuffle).slice(0,8).map(function(hubber){
-	matchingGame.deck.push(hubber)
-	matchingGame.deck.push(hubber)
-});
+// Hubbers["hubbers"].sort(shuffle).slice(0,8).map(function(hubber){
+// 	matchingGame.deck.push(hubber)
+// 	matchingGame.deck.push(hubber)
+// });
 
 console.log(matchingGame.deck)
 
