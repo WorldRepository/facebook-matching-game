@@ -126,21 +126,21 @@ $(function(){
 			'top': ($(this).height() + 15) * Math.floor(index / 4)
 		});
 
-		var Hubber = matchingGame.deck.pop();
-		// This is some shit - we are going to dynamically apply css to the card(s). 
-		$(this)
-			.css("background", "#efefef url(" + Hubber.gravatar + ")")
-			.css("background-size", "128px 128px")
-		$(this).attr("data-pattern",Hubber.login);
+	// 	var Hubber = matchingGame.deck.pop();
+	// 	// This is some shit - we are going to dynamically apply css to the card(s). 
+	// 	$(this)
+	// 		.css("background", "#efefef url(" + Hubber.gravatar + ")")
+	// 		.css("background-size", "128px 128px")
+	// 	$(this).attr("data-pattern",Hubber.login);
 		
-		if ($("[data-pattern="+Hubber.login+"] .name").text() == "") {
-			$(this).find(".name").text(Hubber.name);
-		} else {
-			$(this).find(".login").text(Hubber.login);
-		}
+	// 	if ($("[data-pattern="+Hubber.login+"] .name").text() == "") {
+	// 		$(this).find(".name").text(Hubber.name);
+	// 	} else {
+	// 		$(this).find(".login").text(Hubber.login);
+	// 	}
 
-		$(this).click(selectCard);
-	});
+	// 	$(this).click(selectCard);
+	// });
 	matchingGame.timer = setInterval(countTimer, 1000);
 });
 
